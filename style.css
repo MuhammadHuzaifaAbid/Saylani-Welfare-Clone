@@ -194,7 +194,33 @@ nav ul li span{
 }
 
 .blue {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 11px;
     color: #0d6db7;
+    letter-spacing: 5px;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(10) infinite alternate-reverse, cursor 0.5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 25%;
+    }
+    
 }
 
 .hero_section_container img {
@@ -269,49 +295,6 @@ nav ul li span{
 }
 
 /* hero section end */
-
-.guide {
-    margin-top: 150px;
-    margin-bottom: 100em;
-    width: 100%;
-    height: 260px;
-    background-color: #0d6db7;
-    z-index: 1;
-    background-image: url("/Images/39.img");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.sub-guide {
-    padding: 0px 0px 0px 150px;
-    width: 50%;
-}
-
-.guide h2 {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    position: relative;
-    font-size: 30px;
-    top: 25px;
-    left: 370px;
-}
-
-.guide input {
-    position: relative;
-    top: 10px;
-    left: 210px;
-    height: 50px;
-    width: 528px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    color: white;
-    background-color: transparent;
-    border-radius: 5px;
-}
 
 /* donation & banner start */
 .donation_box {
@@ -419,7 +402,7 @@ nav ul li span{
 
 .service_icon img {
     padding: 15px 0px 5px 30px;
-    width: 70px;
+    width: 75px;
     height: 90px;
 }
 
